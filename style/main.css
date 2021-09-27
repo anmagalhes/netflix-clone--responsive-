@@ -1,0 +1,134 @@
+/* VARIAVES DENTRO DO CSS DENTRO DO SITE SE SOUBER JÁ QUAL DO SITE QUE VAI USADO*/
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+
+/* CONFIRGURAR TODA A PAGINA PADRÃO PARA TODOS OS SITE */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;  /* LIMITE DE TODA A CAIXA */
+}
+
+/*ELEMENTOS BASE*/
+
+body{
+    background:var(--preta);
+    font-family:'Arial', Times, serif;
+    color:white;
+ }
+ 
+
+header .container{
+    display:flex;                    /*ALINHAR TODO EM LINHA O NOME LADO DO OUTRO*/
+    flex-direction: row;              /*MESMO NÃO COLOCANDO ELA VEM*/
+    align-items: center;              /*CENTRALIZAR O NOME LADO DO OUTRO*/
+    justify-content: space-between;  /*JUSTIFICAR OS ELEMENTOS*/
+    
+}
+
+header .logo {
+    margin-left:5px;               /*ESPAÇAMENTO DO NOME COM DEMAIS*/
+    color: var(--vermelho);         /*VARIAVEL PARA DEIXAR COR*/
+    font-family:'Arial Black', times;
+    font-size:40px;
+}
+
+header nav a{
+    text-decoration:none;  /*RETIRAR A COR*/
+    color:#AAA;
+    margin-right:10px;    /*REALIZAR ESPAMENTO ENTR OS NOMES*/ 
+}
+
+/*QUANDO PASSAR O MOUSE VAI AMOSTRAR OUTRA COR*/
+
+header nav a:hover{
+    color:#fff;
+}
+
+
+/*FIME PRINCIPAL*/
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),   url('/img/capa-house.jpg');
+
+    /*ESTÁ COLOCANDO COMO O TAMANHO INICIAL ORIGINAL DA IMAGEM*/
+    height:400px;  
+     /*PEGAR EXATAMENTE ÁREA DE CORBERTA DA CAIXA E A IMAGEM NÃO FICAR RUIM*/                               
+    background-size:cover;                        
+                                            
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/*FIME PRINCIPAL DESCRIÇÃO*/
+.filme-principal .descricao{
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+/*FIME PRINCIPAL TITULO*/
+.filme-principal .titulo{
+    margin-top: 15%;                                      /*DESCER O NOME AUTOMATICO %*/
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;      /*FRONT*/
+}
+
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;                            
+    color: white;
+
+
+    padding:15px 30px;                       /*2 VALORES QUE DIZER 1 - CIMA E BAIXO 2 - LADO OU LADO*/
+    margin-right: 15px;                      /*ESPAMENTO ENTRE OS BOTÃO*/
+    font-size: 12px;                         /*TAMANHO DA FRONT*/
+
+    cursor: pointer;                         /*FIME PRINCIPAL TITULO*/
+    transition: .3s ease all;                /*ANIMAÇÃO*/
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+
+
+
+/* link de referencia filmes e serie : https://www.themoviedb.org/ */ 
+/* link de referencia ter o Icone do HTML : https://fontawesome.com/
+/* link de referencia ter o Boostrap : https://getbootstrap.com/
+/*link de referencia ter JQUERY :http://owlcarousel2.github.io/OwlCarousel2/
+
+
